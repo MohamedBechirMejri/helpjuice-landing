@@ -1,0 +1,32 @@
+#promotion {
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #ffffff29;
+    padding: 0.125rem 1rem;
+    border-radius: 4.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    backdrop-filter: blur(1.5rem);
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+}
