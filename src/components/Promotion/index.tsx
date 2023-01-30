@@ -13,7 +13,12 @@ const Promotion = ({ promotion, url }: { promotion: string; url: string }) => {
         <span>New</span>
         <img src={fire} alt="fire icon" />
       </div>
-      <a href={url} target="_blank" rel="noreferrer">
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        className="hover:underline"
+      >
         {promotion}
       </a>
       <button onClick={() => setIsVisible(false)}>
