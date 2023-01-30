@@ -5,7 +5,7 @@ import email from "./assets/email.svg";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center py-6 font-semibold px-2 max-w-7xl mx-auto">
+    <header className="flex justify-between items-center py-6 font-semibold px-2">
       <nav>
         <ul className="flex items-center gap-8">
           <li className="flex items-center gap-4 text-xl relative font-bold select-none">
