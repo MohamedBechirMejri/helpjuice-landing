@@ -44,7 +44,7 @@ const Reviews = () => {
 
   return (
     <div className="min-h-screen bg-[#f8fafc]">
-      <div className="my-6 p-16">
+      <div className="py-18 p-16">
         <div className="max-w-7xl mx-auto flex items-start gap-12 flex-col ">
           <h1 className="text-6xl font-bold shrink-0">
             Loved by 3000+ Companies <br />
