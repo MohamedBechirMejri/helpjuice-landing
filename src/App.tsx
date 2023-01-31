@@ -1,6 +1,7 @@
 import Promotion from "./components/Promotion";
 import Hero from "./components/Hero";
 import BrowserWindow from "./components/BrowserWindow";
+import Benefits from "./components/Benefits";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       />
       <Hero />
       <BrowserWindow />
+      <Benefits />
     </div>
   );
 };
