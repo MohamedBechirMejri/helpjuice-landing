@@ -8,9 +8,9 @@ const Examples = () => {
 
   return (
     <div className="pb-24">
-      <div className="my-6 p-16">
-        <div className="max-w-7xl mx-auto flex items-start gap-12 ">
-          <h1 className="text-6xl font-bold shrink-0">
+      <div className="py-16 p-4">
+        <div className="max-w-7xl mx-auto flex items-start gap-12 flex-col lg:flex-row ">
+          <h1 className="lg:text-6xl text-3xl font-bold shrink-0">
             Knowledge bases <br />
             <span className="font-extrabold text-transparent bg-clip-text bg-left-top bg-gradient-to-r from-[#a9cbd7] to-[#8a5d8d] via-[#f2bca0]">
               {" "}
@@ -31,7 +31,7 @@ const Examples = () => {
           </div>
         </div>
         <div
-          className="mt-16 overflow-x-scroll overflow-visible noscroll"
+          className="mt-16 overflow-x-scroll noscroll"
           style={{ paddingInline: "calc(calc(100vw - 1280px) / 2)" }}
           ref={scrollContainer.ref}
         >

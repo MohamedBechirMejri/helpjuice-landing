@@ -22,7 +22,7 @@ const clients = [
 
 const BrowserWindow = () => {
   return (
-    <section className="-mt-[5rem] bg-[#f8fafc] pb-8">
+    <section className="lg:-mt-[5rem] -mt-[2rem] bg-[#f8fafc] pb-8">
       <div className="max-w-4xl mx-auto z-10 relative shadow-2xl rounded overflow-hidden">
         <img src={browserToolbar} alt="toolbar" />
         <img src={page} alt="page" />
@@ -30,7 +30,7 @@ const BrowserWindow = () => {
       <h3 className="max-w-4xl mx-auto w-full text-center mt-8 font-bold capitalize">
         trusted by over 3000+ companies all over the world
       </h3>
-      <div className="grid max-w-4xl mx-auto my-8 grid-cols-8 items-center">
+      <div className="grid max-w-4xl mx-auto my-8 lg:grid-cols-8 place-items-center grid-cols-4">
         {clients.map(client => (
           <img
             src={client.image}

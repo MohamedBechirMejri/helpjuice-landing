@@ -40,14 +40,14 @@ const Footer = () => {
   return (
     <footer className="min-h-[57vh] bg-black text-[#98A2B3]">
       <div className="max-w-7xl mx-auto py-12 flex flex-col gap-8">
-        <div className="flex justify-between">
-          <div className="gap-4 flex flex-col">
+        <div className="flex justify-between flex-col lg:flex-row gap-8 lg:gap-0 items-center lg:items-start">
+          <div className="gap-4 flex flex-col items-center lg:items-start">
             <h3 className="text-2xl font-bold text-white">
               Start your 14-Day free trial
             </h3>
             <p>Join over 1000+ firms already growing with Helpjuice.</p>
           </div>
-          <div className="flex items-end flex-col justify-between">
+          <div className="flex items-center flex-col justify-between gap-4">
             <div className="text-white font-semibold text-xs flex gap-2">
               <a href="" className="px-5 rounded-lg bg-[#0560FC]  py-2">
                 Get Started
@@ -65,8 +65,8 @@ const Footer = () => {
 
         <hr className="border-white border-opacity-10" />
 
-        <div className="grid grid-cols-6">
-          <div className="col-span-2 flex flex-col gap-4 items-start">
+        <div className="lg:grid grid-cols-6 p-2">
+          <div className="col-span-2 flex flex-col gap-4 lg:items-start items-center">
             <img src={logo} alt="" />
             <p className="flex flex-col gap-4 text-xs font-medium text-[#98A2B3]">
               <span>Copyright © 2022, Helpjuice Inc.</span>
@@ -79,7 +79,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="col-span-4 grid grid-cols-4 text-white font-medium text-sm text-opacity-80">
+          <div className="mt-8 col-span-4 grid grid-cols-4 text-white font-medium text-sm text-opacity-80 lg:mt-0">
             {links.map((link, index) => (
               <div key={index} className="grid grid-rows-4">
                 <h3 className="text-[#98A2B3]">{link.title}</h3>
@@ -97,7 +97,7 @@ const Footer = () => {
 
         <hr className="border-white border-opacity-10" />
 
-        <div className="grid grid-cols-2 gap-12 text-sm">
+        <div className="grid grid-cols-2 gap-12 text-sm p-4">
           <div className="flex flex-col gap-4">
             <h4 className="font-semibold text-white text-lg">
               Why is the knowledge base important?
@@ -123,7 +123,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between pt-8 text-sm">
+        <div className="flex justify-between pt-8 text-sm m-4 flex-col-reverse lg:flex-row items-center gap-4">
           <p>Made with ❤️ from Miami, Bosnia, Morocco, Brazil & Tunisia</p>
           <div className="flex gap-4">
             <a href="">+1 (833) 387 3877</a>{" "}

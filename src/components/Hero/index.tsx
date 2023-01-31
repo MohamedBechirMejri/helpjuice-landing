@@ -17,7 +17,7 @@ import tipsAndUpdates from "./assets/tips_and_updates.svg";
 const Hero = () => {
   return (
     <section
-      className="bg-black min-h-screen text-white relative bg-right-top bg-no-repeat bg-contain"
+      className="bg-black min-h-screen text-white relative bg-right-top bg-no-repeat bg-contain pb-4"
       style={{ backgroundImage: `url(${neonRing})` }}
     >
       <div className=" max-w-7xl mx-auto">

@@ -12,10 +12,10 @@ const Benefits = () => {
   return (
     <div className="min-h-screen">
       <div className="my-6 p-4 pt-12">
-        <div className="max-w-7xl mx-auto flex items-start gap-12 ">
-          <h1 className="text-7xl font-bold shrink-0">
+        <div className="max-w-7xl mx-auto flex items-start gap-12 flex-col lg:flex-row">
+          <h1 className="lg:text-7xl text-3xl font-bold shrink-0">
             One{" "}
-            <span className="font-extrabold text-transparent bg-clip-text bg-left-top underline text-7xl bg-gradient-to-r from-[#a9cbd7] to-[#8a5d8d] via-[#f2bca0]">
+            <span className="font-extrabold text-transparent bg-clip-text bg-left-top lg:text-7xl text-3xl bg-gradient-to-r from-[#a9cbd7] to-[#8a5d8d] via-[#f2bca0]">
               {" "}
               Knowledge Base{" "}
             </span>{" "}
@@ -63,7 +63,7 @@ const Benefits = () => {
         <img
           src={benefit5}
           alt="customer call service"
-          className="my-[4rem] max-w-7xl mx-auto w-[64rem]"
+          className="my-[4rem] max-w-[min(80rem,92vw)] mx-auto w-[64rem]"
         />
       </div>
     </div>

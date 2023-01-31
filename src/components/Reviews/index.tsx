@@ -44,9 +44,9 @@ const Reviews = () => {
 
   return (
     <div className="min-h-screen bg-[#f8fafc]">
-      <div className="py-18 p-16">
+      <div className="py-16 p-4">
         <div className="max-w-7xl mx-auto flex items-start gap-12 flex-col ">
-          <h1 className="text-6xl font-bold shrink-0">
+          <h1 className="lg:text-6xl text-3xl font-bold shrink-0">
             Loved by 3000+ Companies <br />
             <span className="font-extrabold text-transparent bg-clip-text bg-left-top bg-gradient-to-r from-[#a9cbd7] to-[#8a5d8d] via-[#f2bca0]">
               {" "}
@@ -72,7 +72,7 @@ const Reviews = () => {
         >
           <div className="flex gap-14 w-max max-w-none relative py-8">
             {reviews.map((review, index) => (
-              <div className="w-[28rem] p-6 flex flex-col gap-4 bg-white rounded-lg border font-bold">
+              <div className="w-[min(28rem,90vw)] p-6 flex flex-col gap-4 bg-white rounded-lg border font-bold">
                 <p>{review.review}</p>
                 <hr />
                 <div className="flex justify-between items-center">
@@ -91,7 +91,7 @@ const Reviews = () => {
         </div>
 
         <div className="max-w-7xl mx-auto my-6">
-          <p className="font-medium">
+          <p className="font-medium lg:text-base text-xs">
             *The avg. Helpjuice customer saves 30% more support after switching
           </p>
           <p className="font-bold mt-2">
@@ -106,8 +106,19 @@ const Reviews = () => {
             </a>
           </p>
           <div className="grid lg:grid-cols-3 gap-6 mt-12">
-            {results.map((result, index) => (
-              <div className="flex gap-4 items-center bg-white px-5 p-3 rounded-lg border font-bold text-xs justify-between">
+            {results.map((result, i) => (
+              <div
+                className="flex gap-4 items-center bg-white px-5 p-3 rounded-lg border font-bold text-xs justify-between"
+                style={{
+                  boxShadow: `rgb(0 0 0 / 3%) ${
+                    i % 3 === 0
+                      ? "-27rem 0px"
+                      : i % 2 === 0 || i === 5 || i === 11
+                      ? "27rem 0px"
+                      : "0 0 0 0"
+                  }`,
+                }}
+              >
                 <p>{result.result}</p>{" "}
                 <img src={result.companyLogo} alt="companyLogo" />
               </div>

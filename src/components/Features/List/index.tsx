@@ -39,7 +39,7 @@ const List = () => {
   const [activeItem, setActiveItem] = useState(nav[0].items[0]);
 
   return (
-    <div className="grid grid-cols-[auto,1fr] grid-rows-[auto,1fr] py-8">
+    <div className="lg:grid lg:grid-cols-[auto,1fr] lg:grid-rows-[auto,1fr] py-8 flex flex-col items-start gap-4 lg:gap-0">
       <h3 className="col-span-2 text-sm">FEATURES</h3>
       <nav className="h-full border-l border-l-[#47F09F] mt-4">
         {nav.map(item => (
@@ -53,7 +53,7 @@ const List = () => {
           />
         ))}
       </nav>
-      <div className="max-w-[40rem] ml-24 flex flex-col gap-4 text-[#6CE9A6]">
+      <div className="max-w-[min(40rem,95vw)] lg:ml-24 flex flex-col gap-4 text-[#6CE9A6]">
         <img src={activeItem.image} alt="preview" className="" />
         <h4 className="font-medium text-white">{activeItem.title}</h4>
         <p className="text-sm text-white text-opacity-70">

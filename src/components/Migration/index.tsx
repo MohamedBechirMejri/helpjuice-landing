@@ -5,9 +5,9 @@ import arrowRight from "./assets/arrow-right.svg";
 const Migration = () => {
   return (
     <section className="min-h-screen pb-8">
-      <div className="py-18 p-16">
+      <div className="py-16 p-4">
         <div className="max-w-7xl mx-auto flex items-start gap-12 flex-col ">
-          <h1 className="text-6xl font-bold shrink-0">
+          <h1 className="lg:text-6xl text-3xl font-bold shrink-0">
             Worried about
             <span className="font-extrabold text-transparent bg-clip-text bg-left-top bg-gradient-to-r from-[#a9cbd7] to-[#8a5d8d] via-[#f2bca0]">
               {" "}
@@ -19,7 +19,7 @@ const Migration = () => {
             <p>
               With Helpjuice’s excellent support team, you don't have to worry
               about migrating to helpjuice. Our team will{" "}
-              <strong>complete the entire</strong>
+              <strong>complete the entire </strong>
               migration <strong>FOR YOU</strong>, so you can focus on BETTER
               THINGS!
             </p>
