@@ -11,7 +11,7 @@ const Benefits = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="my-6 p-4">
+      <div className="my-6 p-4 pt-12">
         <div className="max-w-7xl mx-auto flex items-start gap-12 ">
           <h1 className="text-7xl font-bold shrink-0">
             One{" "}

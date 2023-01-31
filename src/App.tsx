@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import BrowserWindow from "./components/BrowserWindow";
 import Benefits from "./components/Benefits";
 import Features from "./components/Features";
+import Examples from "./components/Examples";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <BrowserWindow />
       <Benefits />
       <Features />
+      <Examples />
     </div>
   );
 };
