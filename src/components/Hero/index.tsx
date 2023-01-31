@@ -9,6 +9,10 @@ import textBackground from "./assets/text-background.png";
 import getapp from "./assets/getapp.svg";
 import captera from "./assets/captera.svg";
 import featuredCustomers from "./assets/featured-customers.svg";
+import feed from "./assets/feed.svg";
+import dashboard from "./assets/dashboard_customize.svg";
+import autograph from "./assets/auto_graph.svg";
+import tipsAndUpdates from "./assets/tips_and_updates.svg";
 
 const Hero = () => {
   return (
@@ -88,6 +92,45 @@ const Hero = () => {
             <img src={featuredCustomers} alt="Featured Customers" />
             Featured Customers
           </span>
+        </div>
+
+        <div className="grid grid-cols-4 gap-4 m-6 text-[10.5px]">
+          <div className="p-8 flex gap-8 backdrop-blur-xl border rounded-lg border-white border-opacity-10 select-none shadow-2xl items-center">
+            <img src={feed} alt="feed" className="h-1/2" />
+            <div>
+              <h3 className="text-sm font-medium">Knowledgebase Site</h3>
+              <p className="text-white text-opacity-70">
+                The front-end where your users access search/browse your KB
+              </p>
+            </div>
+          </div>{" "}
+          <div className="p-8 flex gap-8 backdrop-blur-xl border rounded-lg border-white border-opacity-10 select-none shadow-2xl items-center">
+            <img src={dashboard} alt="dashboard" className="h-1/2" />
+            <div>
+              <h3 className="text-sm font-medium">The Helpjuice Editor</h3>
+              <p className="text-white text-opacity-70">
+                The backend, where you edit all your articles
+              </p>
+            </div>
+          </div>{" "}
+          <div className="p-8 flex gap-8 backdrop-blur-xl border rounded-lg border-white border-opacity-10 select-none shadow-2xl items-center">
+            <img src={autograph} alt="autograph" className="h-1/2" />
+            <div>
+              <h3 className="text-sm font-medium">In-Depth Analytics</h3>
+              <p className="text-white text-opacity-70">
+                Great curated analytics showcasing how your articles are used
+              </p>
+            </div>
+          </div>{" "}
+          <div className="p-8 flex gap-8 backdrop-blur-xl border rounded-lg border-white border-opacity-10 select-none shadow-2xl items-center">
+            <img src={tipsAndUpdates} alt="tipsAndUpdates" className="h-1/2" />
+            <div>
+              <h3 className="text-sm font-medium">The Article Planner</h3>
+              <p className="text-white text-opacity-70">
+                Couldn’t find an answer? The article planner is there to help
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
