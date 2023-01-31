@@ -7,7 +7,7 @@ const Examples = () => {
   const scrollContainer = useScrollContainer();
 
   return (
-    <div className="min-h-screen">
+    <div className="pb-24">
       <div className="my-6 p-16">
         <div className="max-w-7xl mx-auto flex items-start gap-12 ">
           <h1 className="text-6xl font-bold shrink-0">

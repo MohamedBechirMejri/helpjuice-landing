@@ -4,6 +4,7 @@ import BrowserWindow from "./components/BrowserWindow";
 import Benefits from "./components/Benefits";
 import Features from "./components/Features";
 import Examples from "./components/Examples";
+import Reviews from "./components/Reviews";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Benefits />
       <Features />
       <Examples />
+      <Reviews />
     </div>
   );
 };
