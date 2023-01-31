@@ -53,19 +53,22 @@ const Hero = () => {
           support, and collaborate better with your team.
         </p>
         <div className="grid lg:flex items-center gap-4 m-6">
-          <div className="flex p-1 ring-1 text-white text-opacity-50 ring-[#ffffff33] rounded-lg h-full pl-4 gap-4 w-max">
-            <img src={email} alt="helpjuice" draggable="false" />
-            <input
-              type="email"
-              placeholder="Enter your work email"
-              className="bg-transparent outline-none"
-            />
+          <div className="flex p-1 ring-1 text-white text-opacity-50 ring-[#ffffff33] rounded-lg h-full pl-4 gap-4 lg:w-max flex-col lg:flex-row">
+            <div className="flex gap-4 items-center">
+              <img src={email} alt="helpjuice" draggable="false" />
+              <input
+                type="email"
+                placeholder="Enter your work email"
+                className="bg-transparent outline-none w-full"
+              />
+            </div>
+
             <button className="bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all">
               Start your Free Trial
             </button>
           </div>
 
-          <span className="flex items-center gap-2 justify-end">
+          <span className="flex items-center gap-2 justify-center">
             <img src={creditCardOff} alt="credit card off icon" />
             No credit card required
           </span>
