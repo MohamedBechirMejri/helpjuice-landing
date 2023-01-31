@@ -1,0 +1,28 @@
+.gradient {
+  background: rgb(85, 101, 137);
+  background: -moz-linear-gradient(
+    39deg,
+    rgba(85, 101, 137, 1) 0%,
+    rgba(163, 196, 205, 1) 24%,
+    rgba(77, 94, 172, 1) 49%,
+    rgba(212, 167, 148, 1) 70%,
+    rgba(179, 100, 139, 1) 95%
+  );
+  background: -webkit-linear-gradient(
+    39deg,
+    rgba(85, 101, 137, 1) 0%,
+    rgba(163, 196, 205, 1) 24%,
+    rgba(77, 94, 172, 1) 49%,
+    rgba(212, 167, 148, 1) 70%,
+    rgba(179, 100, 139, 1) 95%
+  );
+  background: linear-gradient(
+    39deg,
+    rgba(85, 101, 137, 1) 0%,
+    rgba(163, 196, 205, 1) 24%,
+    rgba(77, 94, 172, 1) 49%,
+    rgba(212, 167, 148, 1) 70%,
+    rgba(179, 100, 139, 1) 95%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#556589",endColorstr="#b3648b",GradientType=1);
+}
