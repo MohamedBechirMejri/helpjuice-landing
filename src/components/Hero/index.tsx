@@ -63,9 +63,12 @@ const Hero = () => {
               />
             </div>
 
-            <button className="bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all">
+            <a
+              href="/signup?commit=Start+14+Day+Free+Trial"
+              className="cursor-pointer bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all"
+            >
               Start your Free Trial
-            </button>
+            </a>
           </div>
 
           <span className="flex items-center gap-2 justify-center">

@@ -25,9 +25,12 @@ const Examples = () => {
               be
               <strong>fully customized to their needs.</strong>
             </p>
-            <button className="bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all">
+            <a
+              href="/knowledge-base-examples"
+              className="bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all cursor-pointer"
+            >
               Explore 60+ more examples
-            </button>
+            </a>
           </div>
         </div>
         <div

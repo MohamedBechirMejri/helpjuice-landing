@@ -27,9 +27,12 @@ const Benefits = () => {
               customers to self-service –{" "}
               <strong>an all in 1 knowledge base solution!</strong>
             </p>
-            <button className="bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all">
-              Start your free Trial
-            </button>
+            <a
+              href="/signup?commit=Start+14+Day+Free+Trial"
+              className="cursor-pointer bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all"
+            >
+              Start your Free Trial
+            </a>
           </div>
         </div>
         <div

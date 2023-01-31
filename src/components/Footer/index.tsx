@@ -6,32 +6,32 @@ const links = [
     title: "Product",
     items: [
       { title: "Overview", link: "/", isNew: false },
-      { title: "Features", link: "/", isNew: true },
-      { title: "Pricing", link: "/", isNew: false },
+      { title: "Features", link: "/features", isNew: true },
+      { title: "Pricing", link: "/pricing", isNew: false },
     ],
   },
   {
     title: "Company",
     items: [
-      { title: "About us", link: "/", isNew: false },
-      { title: "Careers", link: "/", isNew: false },
-      { title: "Customers", link: "/", isNew: false },
+      { title: "About us", link: "/about", isNew: false },
+      { title: "Careers", link: "/careers", isNew: false },
+      { title: "Customers", link: "/customers", isNew: false },
     ],
   },
   {
     title: "Resources",
     items: [
-      { title: "Examples", link: "/", isNew: false },
-      { title: "Blog", link: "/", isNew: false },
-      { title: "Case Studies", link: "/", isNew: false },
+      { title: "Examples", link: "/examples", isNew: false },
+      { title: "Blog", link: "/blog", isNew: false },
+      { title: "Case Studies", link: "/case-studies", isNew: false },
     ],
   },
   {
     title: "Legal",
     items: [
-      { title: "Terms of Use", link: "/", isNew: false },
-      { title: "Privacy Policy", link: "/", isNew: true },
-      { title: "Media Kit", link: "/", isNew: false },
+      { title: "Terms of Use", link: "/terms-of-service", isNew: false },
+      { title: "Privacy Policy", link: "/privacy-policy", isNew: true },
+      { title: "Media Kit", link: "/media-kit", isNew: false },
     ],
   },
 ];
@@ -73,7 +73,10 @@ const Footer = () => {
               <span>
                 Helpjuice, Inc. is a registered US Corporation, EIN # 45-2275731
               </span>
-              <a href="" className="text-white hover:underline w-max">
+              <a
+                href="https://helpjuice.com/helpjuice_w9.pdf"
+                className="text-white hover:underline w-max"
+              >
                 Download W9
               </a>
             </p>
@@ -126,7 +129,7 @@ const Footer = () => {
         <div className="flex justify-between pt-8 text-sm m-4 flex-col-reverse lg:flex-row items-center gap-4">
           <p>Made with ❤️ from Miami, Bosnia, Morocco, Brazil & Tunisia</p>
           <div className="flex gap-4">
-            <a href="">+1 (833) 387 3877</a>{" "}
+            <a href="tel:+1 (833) 387 3877">+1 (833) 387 3877</a>{" "}
             <a href="">
               <BsTwitter />
             </a>
