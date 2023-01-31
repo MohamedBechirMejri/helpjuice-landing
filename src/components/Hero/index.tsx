@@ -22,26 +22,26 @@ const Hero = () => {
     >
       <div className=" max-w-7xl mx-auto">
         <Header />
-        <h1 className="p-4  pt-[8rem]">
-          <p className="text-6xl font-extrabold relative">
+        <h1 className="p-4 pt-[5rem]  lg:pt-[8rem]">
+          <p className="text-3xl lg:text-6xl font-extrabold relative">
             Build a knowledgebase for
             <img
               src={line}
               alt="line"
-              className="absolute top-[1rem] left-[9.5rem] w-24"
+              className="absolute lg:left-[9.5rem] lg:w-24 w-12 lg:top-[1rem] left-[4.75rem] top-[.75rem]"
             />
             <img
               src={arrow}
               alt="arrow"
-              className="absolute -top-[1rem] left-[11rem] w-4"
+              className="absolute -top-[1rem] lg:left-[11rem] left-[5.5rem] w-4"
             />
-            <span className="absolute -top-[3.5rem] left-[10.5rem] text-2xl rotate-[12deg] font-[ACT]">
+            <span className="absolute -top-[3.5rem] lg:left-[10.5rem] left-[5rem] text-2xl rotate-[12deg] font-[ACT]">
               The best
             </span>
           </p>
           <br />
           <span
-            className="font-extrabold text-transparent bg-clip-text bg-left-top underline text-7xl"
+            className="font-extrabold text-transparent bg-clip-text bg-left-top lg:text-7xl text-4xl"
             style={{ backgroundImage: `url(${textBackground})` }}
           >
             Customer Support
@@ -52,7 +52,7 @@ const Hero = () => {
           designed from the ground <br /> up to help you scale your customer
           support, and collaborate better with your team.
         </p>
-        <div className="flex items-center gap-4 m-6">
+        <div className="grid lg:flex items-center gap-4 m-6">
           <div className="flex p-1 ring-1 text-white text-opacity-50 ring-[#ffffff33] rounded-lg h-full pl-4 gap-4 w-max">
             <img src={email} alt="helpjuice" draggable="false" />
             <input
@@ -65,7 +65,7 @@ const Hero = () => {
             </button>
           </div>
 
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-2 justify-end">
             <img src={creditCardOff} alt="credit card off icon" />
             No credit card required
           </span>
@@ -94,7 +94,7 @@ const Hero = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 m-6 text-[10.5px]">
+        <div className="grid lg:grid-cols-4 gap-4 m-6 text-[10.5px]">
           <div className="p-8 flex gap-8 backdrop-blur-xl border rounded-lg border-white border-opacity-10 select-none shadow-2xl items-center">
             <img src={feed} alt="feed" className="h-1/2" />
             <div>
