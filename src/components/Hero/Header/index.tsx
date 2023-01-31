@@ -1,7 +1,7 @@
 import logo from "./assets/logo.svg";
 import line from "./assets/line.svg";
 import textBackground from "../assets/text-background.png";
-import email from "./assets/email.svg";
+import email from "../assets/email.svg";
 
 const Header = () => {
   return (

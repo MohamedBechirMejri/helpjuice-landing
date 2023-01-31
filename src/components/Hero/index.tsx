@@ -2,7 +2,9 @@ import Header from "./Header";
 import neonRing from "./assets/neon-ring.png";
 import line from "./assets/line.svg";
 import arrow from "./assets/arrow.svg";
+import email from "./assets/email.svg";
 import textBackground from "./assets/text-background.png";
+import creditCardOff from "./assets/credit_card_off.svg";
 
 const Hero = () => {
   return (
@@ -42,6 +44,24 @@ const Hero = () => {
           designed from the ground <br /> up to help you scale your customer
           support, and collaborate better with your team.
         </p>
+        <div className="flex items-center gap-4 mt-4">
+          <div className="flex p-1 ring-1 text-white text-opacity-50 ring-[#ffffff33] rounded-lg h-full pl-4 gap-4 w-max">
+            <img src={email} alt="helpjuice" draggable="false" />
+            <input
+              type="email"
+              placeholder="Enter your work email"
+              className="bg-transparent outline-none"
+            />
+            <button className="bg-[#0560FC] text-white px-4 p-2 rounded-lg hover:bg-[#0a49c3] transition-all">
+              Start your Free Trial
+            </button>
+          </div>
+
+          <span className="flex items-center gap-2">
+            <img src={creditCardOff} alt="credit card off icon" />
+            No credit card required
+          </span>
+        </div>
       </div>
     </section>
   );
