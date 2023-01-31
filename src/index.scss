@@ -43,3 +43,9 @@ body {
 .noscroll::-webkit-scrollbar {
   display: none;
 }
+
+img {
+  user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
