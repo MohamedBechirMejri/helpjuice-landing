@@ -9,9 +9,7 @@ const Header = () => {
       <nav>
         <ul className="flex items-center gap-8">
           <li className="flex items-center gap-4 text-xl relative font-bold select-none">
-            <div></div>
             <img src={logo} alt="helpjuice" draggable="false" />
-            <span>Helpjuice</span>
           </li>
           <li>
             <a href="#">Home</a>
