@@ -3,8 +3,12 @@ import neonRing from "./assets/neon-ring.png";
 import line from "./assets/line.svg";
 import arrow from "./assets/arrow.svg";
 import email from "./assets/email.svg";
-import textBackground from "./assets/text-background.png";
+import star from "./assets/star.svg";
 import creditCardOff from "./assets/credit_card_off.svg";
+import textBackground from "./assets/text-background.png";
+import getapp from "./assets/getapp.svg";
+import captera from "./assets/captera.svg";
+import featuredCustomers from "./assets/featured-customers.svg";
 
 const Hero = () => {
   return (
@@ -39,12 +43,12 @@ const Hero = () => {
             Customer Support
           </span>
         </h1>
-        <p className="max-w-3xl p-3 text-white text-opacity-70">
+        <p className="max-w-3xl m-6 text-white text-opacity-70">
           Helpjuice’s easy-to-use and ultra powerful knowledge base software is
           designed from the ground <br /> up to help you scale your customer
           support, and collaborate better with your team.
         </p>
-        <div className="flex items-center gap-4 mt-4">
+        <div className="flex items-center gap-4 m-6">
           <div className="flex p-1 ring-1 text-white text-opacity-50 ring-[#ffffff33] rounded-lg h-full pl-4 gap-4 w-max">
             <img src={email} alt="helpjuice" draggable="false" />
             <input
@@ -52,7 +56,7 @@ const Hero = () => {
               placeholder="Enter your work email"
               className="bg-transparent outline-none"
             />
-            <button className="bg-[#0560FC] text-white px-4 p-2 rounded-lg hover:bg-[#0a49c3] transition-all">
+            <button className="bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all">
               Start your Free Trial
             </button>
           </div>
@@ -60,6 +64,29 @@ const Hero = () => {
           <span className="flex items-center gap-2">
             <img src={creditCardOff} alt="credit card off icon" />
             No credit card required
+          </span>
+        </div>
+        <div className="flex gap-2 items-center m-6">
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <span>4.8 avg reviews, for over 11 years</span>
+        </div>
+
+        <div className="flex gap-4 items-center m-6 text-opacity-70 text-white">
+          <span className="flex items-center gap-2">
+            <img src={captera} alt="Captera" />
+            Capterra
+          </span>
+          <span className="flex items-center gap-2">
+            <img src={getapp} alt="GetApp" />
+            GetApp
+          </span>
+          <span className="flex items-center gap-2">
+            <img src={featuredCustomers} alt="Featured Customers" />
+            Featured Customers
           </span>
         </div>
       </div>
