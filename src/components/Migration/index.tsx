@@ -4,7 +4,7 @@ import arrowRight from "./assets/arrow-right.svg";
 
 const Migration = () => {
   return (
-    <section className="min-h-screen bg-[#f8fafc]">
+    <section className="min-h-screen pb-8">
       <div className="py-18 p-16">
         <div className="max-w-7xl mx-auto flex items-start gap-12 flex-col ">
           <h1 className="text-6xl font-bold shrink-0">
