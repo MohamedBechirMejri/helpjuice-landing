@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import menu from "./assets/menu.svg";
 import SubListItem from "./SubListItem";
 
@@ -40,11 +41,24 @@ const ListItem = ({
           {item.title}
         </h4>
       </div>
-      <ul
-        className="ml-7 border-l border-l-[#FFC0CB] "
-        style={{ display: activeTab.title === item.title ? "block" : "none" }}
+      <motion.ul
+        className="ml-7 border-l border-l-[#FFC0CB] origin-top"
+        initial={{
+          height: activeTab.title === item.title ? "max-content" : 0,
+          scaleY: activeTab.title === item.title ? 1 : 0,
+          opacity: activeTab.title === item.title ? 1 : 0,
+        }}
+        animate={{
+          height: activeTab.title === item.title ? "max-content" : 0,
+          scaleY: activeTab.title === item.title ? 1 : 0,
+          opacity: activeTab.title === item.title ? 1 : 0,
+        }}
+        transition={{
+          duration: 0.3,
+          ease: "easeInOut",
+        }}
       >
-        {item.items.map((item: any) => (
+        {item.items.map((item: any, i: number) => (
           <SubListItem
             key={item.title}
             item={item}
@@ -55,7 +69,7 @@ const ListItem = ({
         <button className=" mt-2 ml-4">
           <img src={menu} alt="menu" className="w-10" />
         </button>
-      </ul>
+      </motion.ul>
     </div>
   );
 };

@@ -14,7 +14,13 @@ const SubListItem = ({
 }) => {
   return (
     <li className="py-2 text-sm flex items-center">
-      <span className="w-3 h-[1px] bg-[#FFC0CB]" />
+      <span
+        className="w-3 h-[1px]"
+        style={{
+          background: activeItem.title === item.title ? "#FFC0CB" : "",
+        }}
+      />
+
       <h5
         className={
           "pl-2 font-medium cursor-pointer text-white text-opacity-70 hover:text-opacity-100 " +
