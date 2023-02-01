@@ -39,7 +39,7 @@ const App = () => {
       <BrowserWindow scrollPosition={scrollPosition} />
       <Benefits scrollPosition={scrollPosition} />
       <Features />
-      <Examples />
+      <Examples scrollPosition={scrollPosition} />
       <Reviews />
       <Migration />
       <Footer />

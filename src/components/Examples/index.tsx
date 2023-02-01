@@ -1,10 +1,11 @@
+import { motion } from "framer-motion";
 import { useScrollContainer } from "react-indiana-drag-scroll";
 
 import arrow from "./assets/arrow.svg";
 import example1 from "./assets/example1.svg";
 import example2 from "./assets/example2.svg";
 
-const Examples = () => {
+const Examples = ({ scrollPosition }: { scrollPosition: number }) => {
   const scrollContainer = useScrollContainer();
 
   return (
@@ -38,14 +39,19 @@ const Examples = () => {
           style={{ paddingInline: "calc(calc(100vw - 1280px) / 2)" }}
           ref={scrollContainer.ref}
         >
-          <div className="flex gap-14 w-max max-w-none relative py-8">
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: scrollPosition > 55 ? [0, -50, 0, -50, 0] : 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex gap-14 w-max max-w-none relative py-8"
+          >
             <img src={example1} alt="example1" className="w-[40rem]" />
             <img src={example2} alt="example2" className="w-[40rem]" />
             <img src={example1} alt="example1" className="w-[40rem]" />
             <img src={example2} alt="example2" className="w-[40rem]" />
             <img src={example1} alt="example1" className="w-[40rem]" />
             <img src={example2} alt="example2" className="w-[40rem]" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
