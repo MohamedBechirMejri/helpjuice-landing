@@ -41,11 +41,14 @@ const BrowserWindow = () => {
               <div className="bg-[#F5BD4F] hover:bg-[#fdd586] active:bg-[#F5BD4F99] transition-all p-[6px] rounded-full cursor-pointer"></div>
               <div className="bg-[#61C454] hover:bg-[#8fe584] active:bg-[#61C45499] transition-all p-[6px] rounded-full cursor-pointer"></div>
             </div>
-
-            <img src={sidebarButton} alt="" />
+            <div className="cursor-pointer">
+              <img src={sidebarButton} alt="" />
+            </div>
 
             <div className="flex items-center gap-6">
-              <img src={back} alt="" />
+              <div className="cursor-pointer">
+                <img src={back} alt="" />
+              </div>
               <img src={back} alt="" className="rotate-180 brightness-50" />
             </div>
           </div>
