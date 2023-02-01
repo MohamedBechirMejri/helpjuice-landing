@@ -12,6 +12,7 @@ import mindshare from "./assets/mindshare.svg";
 import mobicom from "./assets/mobicom.svg";
 import vacasa from "./assets/vacasa.svg";
 import awards from "./assets/awards.svg";
+import { motion } from "framer-motion";
 
 const reviews = Array(10).fill({
   name: "Lyle Kauffman",
@@ -39,12 +40,16 @@ const results = [
   { result: "40% Less Support Tickets", companyLogo: vacasa },
 ];
 
-const Reviews = () => {
+const Reviews = ({ scrollPosition }: { scrollPosition: number }) => {
   const scrollContainer = useScrollContainer();
 
   return (
     <div className="min-h-screen bg-[#f8fafc]">
-      <div className="py-16 p-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: scrollPosition > 60 ? 1 : 0 }}
+        className="py-16 p-4"
+      >
         <div className="max-w-7xl mx-auto flex items-start gap-4 flex-col ">
           <h1 className="lg:text-6xl text-3xl font-bold shrink-0 leading-[5rem!important]">
             Loved by 3000+ Companies <br />
@@ -70,12 +75,19 @@ const Reviews = () => {
         </div>
         <div
           className="mt-16 overflow-x-scroll overflow-visible noscroll"
-          style={{ paddingInline: "calc(calc(100vw - 1280px) / 3)" }}
+          style={{ paddingInline: "calc(calc(100vw - 1280px) / 2.25)" }}
           ref={scrollContainer.ref}
         >
           <div className="flex gap-14 w-max max-w-none relative py-8">
             {reviews.map((review, index) => (
-              <div className="w-[min(27.5rem,90vw)] p-6 flex flex-col gap-4 bg-white rounded-lg border font-medium">
+              <motion.div
+                animate={{
+                  y: scrollPosition > 65 ? 0 : 50,
+                  opacity: scrollPosition > 65 ? 1 : 0,
+                }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                className="w-[min(27.5rem,90vw)] p-6 flex flex-col gap-4 bg-white rounded-lg border font-medium"
+              >
                 <p>{review.review}</p>
                 <hr />
                 <div className="flex justify-between items-center">
@@ -88,7 +100,7 @@ const Reviews = () => {
                   </div>
                   <img src={review.companyLogo} alt="companyLogo" />
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -110,7 +122,12 @@ const Reviews = () => {
           </p>
           <div className="grid lg:grid-cols-3 gap-6 mt-12">
             {results.map((result, i) => (
-              <div
+              <motion.div
+                animate={{
+                  y: scrollPosition > 65 ? 0 : 50,
+                  opacity: scrollPosition > 65 ? 1 : 0,
+                }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="flex gap-4 items-center bg-white px-5 p-3 rounded-lg border font-bold text-xs justify-between"
                 style={{
                   boxShadow: `rgb(0 0 0 / 3%) ${
@@ -124,7 +141,7 @@ const Reviews = () => {
               >
                 <p>{result.result}</p>{" "}
                 <img src={result.companyLogo} alt="companyLogo" />
-              </div>
+              </motion.div>
             ))}
           </div>
           <div className="mt-12">
@@ -137,7 +154,7 @@ const Reviews = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

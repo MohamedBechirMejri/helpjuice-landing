@@ -40,7 +40,7 @@ const App = () => {
       <Benefits scrollPosition={scrollPosition} />
       <Features />
       <Examples scrollPosition={scrollPosition} />
-      <Reviews />
+      <Reviews scrollPosition={scrollPosition} />
       <Migration />
       <Footer />
     </div>
