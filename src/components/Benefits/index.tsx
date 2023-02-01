@@ -37,7 +37,7 @@ const Benefits = ({ scrollPosition }: { scrollPosition: number }) => {
           </div>
         </div>
         <div
-          className="mt-16 overflow-x-scroll overflow-visible noscroll"
+          className="mt-16 overflow-x-scroll "
           style={{ paddingInline: "calc(calc(100vw - 1280px) / 2)" }}
           ref={scrollContainer.ref}
         >
