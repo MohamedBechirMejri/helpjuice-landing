@@ -1,5 +1,5 @@
 import Header from "./Header";
-import neonRing from "./assets/neon-ring.png";
+import neonRing from "./assets/bg.svg";
 import line from "./assets/line.svg";
 import arrow from "./assets/arrow.svg";
 import email from "./assets/email.svg";
