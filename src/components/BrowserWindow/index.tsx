@@ -27,7 +27,7 @@ const BrowserWindow = () => {
         <img src={browserToolbar} alt="toolbar" />
         <img src={page} alt="page" />
       </div>
-      <h3 className="max-w-4xl mx-auto w-full text-center mt-8 font-bold capitalize">
+      <h3 className="max-w-4xl mx-auto w-full text-center mt-14 font-bold capitalize text-sm">
         trusted by over 3000+ companies all over the world
       </h3>
       <div className="grid max-w-4xl mx-auto my-8 lg:grid-cols-8 place-items-center grid-cols-4">

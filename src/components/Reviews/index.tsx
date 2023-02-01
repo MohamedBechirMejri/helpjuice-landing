@@ -45,8 +45,8 @@ const Reviews = () => {
   return (
     <div className="min-h-screen bg-[#f8fafc]">
       <div className="py-16 p-4">
-        <div className="max-w-7xl mx-auto flex items-start gap-12 flex-col ">
-          <h1 className="lg:text-6xl text-3xl font-bold shrink-0">
+        <div className="max-w-7xl mx-auto flex items-start gap-4 flex-col ">
+          <h1 className="lg:text-6xl text-3xl font-bold shrink-0 leading-[5rem!important]">
             Loved by 3000+ Companies <br />
             <span className="font-extrabold text-transparent bg-clip-text bg-left-top bg-gradient-to-r from-[#a9cbd7] to-[#8a5d8d] via-[#f2bca0]">
               {" "}
@@ -62,7 +62,7 @@ const Reviews = () => {
             </p>
             <a
               href="/signup?commit=Start+14+Day+Free+Trial"
-              className="cursor-pointer bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all"
+              className="cursor-pointer bg-[#0560FC] text-white px-[1.125rem] p-[0.625rem] rounded-[0.375rem] hover:bg-[#0a49c3] transition-all"
             >
               Start your Free Trial
             </a>
@@ -75,7 +75,7 @@ const Reviews = () => {
         >
           <div className="flex gap-14 w-max max-w-none relative py-8">
             {reviews.map((review, index) => (
-              <div className="w-[min(28rem,90vw)] p-6 flex flex-col gap-4 bg-white rounded-lg border font-bold">
+              <div className="w-[min(27.5rem,90vw)] p-6 flex flex-col gap-4 bg-white rounded-lg border font-medium">
                 <p>{review.review}</p>
                 <hr />
                 <div className="flex justify-between items-center">
@@ -83,7 +83,7 @@ const Reviews = () => {
                     <img src={review.avatar} alt="avatar" />
                     <div>
                       <h3 className="font-bold">{review.name}</h3>
-                      <p>{review.occupation}</p>
+                      <p className="text-[#475467]">{review.occupation}</p>
                     </div>
                   </div>
                   <img src={review.companyLogo} alt="companyLogo" />

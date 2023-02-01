@@ -29,7 +29,7 @@ const Benefits = () => {
             </p>
             <a
               href="/signup?commit=Start+14+Day+Free+Trial"
-              className="cursor-pointer bg-[#0560FC] text-white px-4 p-3 rounded-lg hover:bg-[#0a49c3] transition-all"
+              className="cursor-pointer bg-[#0560FC] text-white px-[1.125rem] p-[0.625rem] rounded-[0.375rem] hover:bg-[#0a49c3] transition-all"
             >
               Start your Free Trial
             </a>
