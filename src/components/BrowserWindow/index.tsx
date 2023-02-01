@@ -16,6 +16,7 @@ import tabs from "./assets/tabs.svg";
 import shield from "./assets/shield.svg";
 import lock from "./assets/lock.svg";
 import reload from "./assets/reload.svg";
+import { motion } from "framer-motion";
 
 const clients = [
   { name: "Amazon", image: amazon },
@@ -28,10 +29,18 @@ const clients = [
   { name: "Glovo", image: glovo },
 ];
 
-const BrowserWindow = () => {
+const BrowserWindow = ({ scrollPosition }: { scrollPosition: number }) => {
   return (
     <section className="lg:-mt-[5rem] -mt-[2rem] bg-[#f8fafc] pb-8">
-      <div className="max-w-4xl mx-auto z-10 relative shadow-2xl rounded overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{
+          opacity: scrollPosition > 3 ? 1 : 0,
+          y: scrollPosition > 3 ? 0 : 50,
+        }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="max-w-4xl mx-auto z-50 relative shadow-2xl rounded overflow-hidden"
+      >
         {/* toolbar */}
         <div className="bg-[#191C1F] w-full h-[52px] flex p-3 px-4 items-center justify-between rounded-t-md">
           {/* left buttons */}{" "}
@@ -81,7 +90,7 @@ const BrowserWindow = () => {
           </div>
         </div>
         <img src={page} alt="page" />
-      </div>
+      </motion.div>
       <h3 className="max-w-4xl mx-auto w-full text-center mt-14 font-bold capitalize text-sm">
         trusted by over 3000+ companies all over the world
       </h3>
