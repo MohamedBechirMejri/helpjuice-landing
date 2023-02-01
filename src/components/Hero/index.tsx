@@ -17,9 +17,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <motion.section
-      className="bg-black min-h-screen text-white relative bg-no-repeat bg-contain pb-4"
-    >
+    <motion.section className="bg-black min-h-screen text-white relative bg-no-repeat bg-contain pb-4">
       <motion.img
         initial={{ top: 0, right: 0 }}
         src={neonRing}
@@ -89,11 +87,19 @@ const Hero = () => {
           </span>
         </div>
         <div className="flex gap-2 items-center m-6">
-          <img src={star} alt="star" />
-          <img src={star} alt="star" />
-          <img src={star} alt="star" />
-          <img src={star} alt="star" />
-          <img src={star} alt="star" />
+          {[0, 1, 2, 3, 4].map(i => (
+            <motion.img
+              initial={{ scale: 0.5 }}
+              animate={{ scale: 1 }}
+              transition={{
+                delay: i * 0.1,
+                duration: 0.5,
+                ease: "easeInOut",
+              }}
+              src={star}
+              alt="star"
+            />
+          ))}
           <span>4.8 avg reviews, for over 11 years</span>
         </div>
 
