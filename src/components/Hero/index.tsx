@@ -13,14 +13,26 @@ import feed from "./assets/feed.svg";
 import dashboard from "./assets/dashboard_customize.svg";
 import autograph from "./assets/auto_graph.svg";
 import tipsAndUpdates from "./assets/tips_and_updates.svg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section
-      className="bg-black min-h-screen text-white relative bg-right-top bg-no-repeat bg-contain pb-4"
-      style={{ backgroundImage: `url(${neonRing})` }}
+    <motion.section
+      className="bg-black min-h-screen text-white relative bg-no-repeat bg-contain pb-4"
     >
-      <div className=" max-w-7xl mx-auto">
+      <motion.img
+        initial={{ top: 0, right: 0 }}
+        src={neonRing}
+        animate={{ rotate: 360 }}
+        transition={{
+          loop: Infinity,
+          repeat: Infinity,
+          duration: 40,
+          ease: "easeInOut",
+        }}
+        className="absolute   "
+      />
+      <div className=" max-w-7xl mx-auto relative z-10">
         <Header />
         <h1 className="p-4 pt-[5rem]  lg:pt-[8rem]">
           <p className="text-3xl lg:text-6xl font-extrabold relative">
@@ -139,7 +151,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
