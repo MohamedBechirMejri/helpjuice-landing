@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useScrollContainer } from "react-indiana-drag-scroll";
 
 import benefit1 from "./assets/benefit1.svg";
@@ -6,7 +7,7 @@ import benefit3 from "./assets/benefit3.svg";
 // import benefit4 from "./assets/benefit4.svg"; can'find this file in figma
 import benefit5 from "./assets/benefit5.svg";
 
-const Benefits = () => {
+const Benefits = ({ scrollPosition }: { scrollPosition: number }) => {
   const scrollContainer = useScrollContainer();
 
   return (
@@ -41,25 +42,45 @@ const Benefits = () => {
           ref={scrollContainer.ref}
         >
           <div className="flex gap-14 w-max max-w-none relative py-8">
-            <img
+            <motion.img
+              animate={{
+                opacity: scrollPosition > 18 ? 1 : 0,
+                left: scrollPosition > 18 ? "0%" : "60%",
+              }}
+              transition={{ delay: 0, duration: 0.5, ease: "easeOut" }}
               src={benefit1}
               alt="customer call service"
-              className="w-[28rem]"
+              className="w-[28rem] relative"
             />
-            <img
+            <motion.img
+              animate={{
+                opacity: scrollPosition > 18 ? 1 : 0,
+                left: scrollPosition > 18 ? "0%" : "60%",
+              }}
+              transition={{ delay: 0.1, duration: 0.5, ease: "easeOut" }}
               src={benefit2}
               alt="Employee Onboarding & Training"
-              className="w-[28rem]"
+              className="w-[28rem] relative"
             />
-            <img
+            <motion.img
+              animate={{
+                opacity: scrollPosition > 18 ? 1 : 0,
+                left: scrollPosition > 18 ? "0%" : "60%",
+              }}
+              transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
               src={benefit3}
               alt="Playbooks, SOPs, FAQs"
-              className="w-[28rem]"
+              className="w-[28rem] relative"
             />
-            <img
+            <motion.img
+              animate={{
+                opacity: scrollPosition > 18 ? 1 : 0,
+                left: scrollPosition > 18 ? "0%" : "60%",
+              }}
+              transition={{ delay: 0.3, duration: 0.5, ease: "easeOut" }}
               src={benefit1}
               alt="customer call service"
-              className="w-[28rem]"
+              className="w-[28rem] relative"
             />
           </div>
         </div>

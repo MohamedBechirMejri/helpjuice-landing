@@ -37,7 +37,7 @@ const App = () => {
       />
       <Hero />
       <BrowserWindow scrollPosition={scrollPosition} />
-      <Benefits />
+      <Benefits scrollPosition={scrollPosition} />
       <Features />
       <Examples />
       <Reviews />
