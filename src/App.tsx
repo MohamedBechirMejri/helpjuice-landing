@@ -29,8 +29,6 @@ const App = () => {
 
   return (
     <div className="max-w-[100vw] overflow-x-hidden">
-      <h1 className="fixed top-0 bg-black text-white z-20">{scrollPosition}</h1>
-
       <Promotion
         promotion="Black Friday Deal - Save upto 40% on all annual plans. Buy Now"
         url="https://helpjuice.com/pricing"
